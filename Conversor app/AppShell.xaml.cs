@@ -5,6 +5,7 @@ public partial class AppShell : Shell
 	public AppShell()
 	{
 		InitializeComponent();
+		Routing.RegisterRoute("conversor", typeof(ConversorPage));
 	}
 	public AppShell()
 	{
