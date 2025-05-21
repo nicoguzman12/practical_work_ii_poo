@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace oopguidedpw7
+namespace Conversor_app
 {
     public class Program
     {
