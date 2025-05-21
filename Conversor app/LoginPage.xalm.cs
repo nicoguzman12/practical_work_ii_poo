@@ -11,16 +11,18 @@ private async void OnLoginClicked(object sender, EventArgs e)
 {
     string username = UsernameEntry.Text;
     string password = PasswordEntry.Text;
+    await Shell.Current.GoToAsync("conversor");
+
 
     if (UserManager.Login(username, password))
-    {
-        Session.CurrentUsername = username; // ← Guarda sesión
-        await Shell.Current.GoToAsync("conversor");
-    }
-    else
-    {
-        await DisplayAlert("Error", "Invalid username or password", "OK");
-    }
+        {
+            Session.CurrentUsername = username; //storage session
+            await Shell.Current.GoToAsync("conversor");
+        }
+        else
+        {
+            await DisplayAlert("Error", "Invalid username or password", "OK");
+        }
 }
 
 
