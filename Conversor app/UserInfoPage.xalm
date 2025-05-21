@@ -1,0 +1,17 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" x:Class="Conversor_app.UserInfoPage" Title="User Info">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Label Text="Name:" FontAttributes="Bold"/>
+            <Label x:Name="NameLabel"/>
+
+            <Label Text="Username:" FontAttributes="Bold"/>
+            <Label x:Name="UsernameLabel"/>
+
+            <Label Text="Password:" FontAttributes="Bold"/>
+            <Label x:Name="PasswordLabel"/>
+
+            <Label Text="Operations executed:" FontAttributes="Bold"/>
+            <Label x:Name="OperationCountLabel"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
